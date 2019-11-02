@@ -7,7 +7,8 @@ const app = express();
 connectDB();
 
 // init middleware
-app.use(express.json({ extended: false }));
+// app.use(express.json({ extended: false }));
+app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
